@@ -10,3 +10,7 @@ a div{
 #container a {text-decoration:none;color:black;}
 
 .ans{max-width: 80rem;}
+
+.card-body:hover{
+    background-color: #8eb5eccf;
+}
