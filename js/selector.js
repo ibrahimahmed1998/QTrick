@@ -68,27 +68,20 @@ const start = () => {
     // else{
     //     console.log("correct_count :"+correct_count);
     // }
-
-    res = `عدد الاجابات الصحيحة هي: ${correct_count}`;
-
+    desc="عدد الاجابات الصحيحة : " +correct_count;
+    desc2="عدد الاسئلة المجاب عنها : "+ parseInt(count+1);
+    all = `${desc} <br> ${desc2}`;
     start();
-    display_result(res);
+    display_result(all);
  }
 
  const display_result = (res) => {
     const btn = document.querySelector('#btn');
     btn.addEventListener('click', () => {
-       
              
              btn.innerHTML = res;
 
-        
-    // clearall();
-    // const result = document.querySelector('#correct');
-
- 
-    
- }  )}
+ })}
            
 const clearall = () => { container.innerHTML = ''; }
 
