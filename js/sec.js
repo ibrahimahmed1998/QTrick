@@ -28,7 +28,7 @@ function getWithExpiry(key) {
 sec = getWithExpiry("sec")
 
 if(sec == null){
-    sec = prompt("please enter your cisco id");
+    sec = prompt("كلمة السر في الوقت الحالي هي 1234 لكن لاحقا ستصبح ال cisco id ");
     if(sec!="1234"){
         alert("wrong id");
         window.location.href = "null.html";
