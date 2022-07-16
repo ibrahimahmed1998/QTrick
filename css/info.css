@@ -2,11 +2,11 @@
     margin-top:10%;
 }
 
-div{
+a div{
     max-width: 90rem; 
     background-color:#e3f2fd;
 }
 
 #container a {text-decoration:none;color:black;}
 
-a div{max-width: 80rem;}
+.ans{max-width: 80rem;}
