@@ -78,11 +78,11 @@ const start = () => {
  const display_result = (res) => {
     const btn = document.querySelector('#btn');
     btn.addEventListener('click', () => {
-        {
+       
              
              btn.innerHTML = res;
 
-        }
+        
     // clearall();
     // const result = document.querySelector('#correct');
 
