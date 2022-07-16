@@ -8,34 +8,7 @@ a{
     font-weight: bold;
 }
 
-.float-area{
-    height:5vh;
-    display: inline;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .floating-img{
-    min-height: 350px;
-    max-height: 350px;
 
-    min-width: 350px;
-    max-width: 470px;
-
-
-    margin-left:2%;
- 
-    transform: translateY(-10%);
-    animation: floater 30s infinite;
-    transition: ease 0.5s;
-    
-  }
-  
-  @keyframes floater {
-    0%{transform: translateY(-10%);transition: ease 0.5s;}
-    50%{transform: translateY(10%);transition: ease 0.5s;}
-  }
   
   footer{
     position: fixed;
