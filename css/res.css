@@ -1,12 +1,15 @@
-.res{
-    margin-top:2%;
-    margin-left:5%;
-    color:#0A58CA;
+.res {
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
-p{
-    font-weight: bold; 
-    margin-left:6%; 
+p {
+    font-weight: bold;
+    margin-left: 6%;
     margin-top: 1%;
 }
- 
+.ul{
+    font-weight: bold;
+    margin-left: 6%;
+    margin-top: 1%;
+}
