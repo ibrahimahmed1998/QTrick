@@ -1,130 +1,40 @@
-
-data = [
-    {
-        question: 'في كل الحسابات الدائنة بالجنيه المصري يكون الايداع النقدي حق يوم العمل التالي و لو اراد العميل ان يكون الايداع حق نفس اليوم',
-        answers: {
-            a:"سيتم خصم عمولة 0.1% ( واحد في الالف بحد ادني 5 ج )",
-            b:"سيتم خصم عمولة 30 ج علي كل المبلغ",
-            c:'سيتم خصم عمولة 30 ج علي كل الف',
-            d:'لا شئ مما سبق'
-        }, correctAnswer: 'a'
-    },
-    {
-        question: 'لا يحق للعميل السحب النقدي من حساباته داخل الفرع بالرقم القومي منتهي الصلاحية',
-        answers: {
-            a: "يمكن السحب من الحساب بجواز السفر الساري و يجب ان يكون مسجل به الرقم القومي",
-            b: "رخصة سلاح سارية موجود بها رقم قومي ",
-            c: "بطاقة عسكرية للظباط / ضباط الصف",
-            d: "جميع ما سبق",
-
-        }, correctAnswer: 'd'
-    },
-
-    {
-        question: '',
-        answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
-
-        }, correctAnswer: 'd'
-    },
-
-    {
-        question: '',
-        answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
-
-        }, correctAnswer: 'd'
-    },
-
-    {
-        question: '',
-        answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
-
-        }, correctAnswer: 'd'
-    },
-
-    {
-        question: '',
-        answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
-
-        }, correctAnswer: 'd'
-    },
-
-    {
-        question: '',
-        answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
-
-        }, correctAnswer: 'd'
-    },
-
-    {
-        question: '',
-        answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
-
-        }, correctAnswer: 'd'
-    },
-
-]
-
-var count = 0 ; 
+var count = 0;
+const container = document.querySelector('#container');
 
 const next = () => {
-
     count++;
-    console.log(count);
+    // console.log(count);
     start(count);
-
 }
 
-const start = (id) => {
+const new_ele = (parent, ele, txt, classes, attribute) => {
+    // element, append in parent, class, textcontent, setattribute
+    const myEle = document.createElement(ele)
+    parent.appendChild(myEle)
+    if (classes) myEle.className = classes
+    if (txt) myEle.textContent = txt
+    if (attribute) myEle.setAttribute(attribute.name, attribute.val) // {name:"id", val:"1"}
+    return myEle
+}
 
-    const question = document.querySelector('#question');
-    const a = document.querySelector('#a');
-    const b = document.querySelector('#b');
-    const c = document.querySelector('#c');
-    const d = document.querySelector('#d');
+const start = () => {
+    clearall();
 
+    const anc = new_ele(container, 'a', null, 'question', { name: 'href', val: '#' })
+    const div = new_ele(anc, 'div', null, 'card mb-3', null);
+    const div2 = new_ele(div, 'div', null, 'card-body', null);
+    new_ele(div2, 'h5', data[count].question, 'card-title', null);
 
-    if (id) {
-        question.innerHTML = data[id].question;
-        a.innerHTML = data[id].answers.a;
-        b.innerHTML = data[id].answers.b;
-        c.innerHTML = data[id].answers.c;
-        d.innerHTML = data[id].answers.d;
+    arr = Object.keys(data[count].answers);
 
-         
-    }
-    else
-    {
-        question.innerHTML = data[0].question;
-        a.innerHTML = data[0].answers.a;
-        b.innerHTML = data[0].answers.b;
-        c.innerHTML = data[0].answers.c;
-        d.innerHTML = data[0].answers.d;
-
+    for (let i = 0; i < arr.length; i++) {
+        const anc2 = new_ele(container, 'a', null, 'question', { name: 'href', val: '#' })
+        const div3 = new_ele(anc2, 'div', null, 'card mb-3', { name: 'onclick', val: `next()` });
+        const div4 = new_ele(div3, 'div', null, 'card-body', null);
+        new_ele(div4, 'h5', data[count].answers[arr[i]], 'card-title', null);
     }
 }
+
+const clearall = () => { container.innerHTML = ''; }
 
 start();
