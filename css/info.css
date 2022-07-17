@@ -4,13 +4,20 @@
 
 a div{
     max-width: 90rem; 
-    background-color:#e3f2fd;
+    /* background-color:#e3f2fd; */
 }
 
 #container a {text-decoration:none;color:black;}
 
 .ans{max-width: 80rem;}
 
-.card-body:hover{
-    background-color: #8eb5eccf;
+ 
+
+
+body{
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
+  
