@@ -12,28 +12,23 @@ const new_ele = (parent, ele, txt, classes, attribute) => {
 }
 
 const next = (choice) => {
- 
     checker(choice);
-
-     
      count++;
-     start();
-}
-
-
+     start();}
 
 const start = () => {
     
     clearall();
 
-    // question part 
+    /*########################### Question part ###########################*/
     const anc = new_ele(container, 'a', null,null, { name: 'href', val: '#' })
     const div = new_ele(anc, 'div', null, 'card mb-3', null);
     const div2 = new_ele(div, 'div', null, 'card-body', null);
     new_ele(div2, 'h5', data[count].question, 'card-title', null);
 
+    /*########################### Answer part ###########################*/
     arr = Object.keys(data[count].answers);
-  
+
     for (let i = 0; i < arr.length; i++) {
         const anc2 = new_ele(container, 'a', null,null, { name: 'href', val:'#' }   )
         switch (i) {
@@ -47,6 +42,10 @@ const start = () => {
         const div4 = new_ele(div3, 'div', null, 'card-body', null);
         new_ele(div4, 'h5', data[count].answers[arr[i]], 'card-title', {name:'id', val:'ans'});
     }
+
+    author = data[count].author;
+    new_ele(container, 'h5', author, 'author', null);
+    console.log("author : "+author);
     
  }
 

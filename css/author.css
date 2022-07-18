@@ -1,0 +1,19 @@
+.author{
+
+ text-align: right;
+ margin:2% 5% 0% 0%;
+ font-family:"Lucida Handwriting";  
+ /* font-family:"Brush Script MT";   */
+
+ /* Brush Script MT */
+ font-size:25px;
+
+}
+
+h5:hover{
+    color: #0ebc11;
+}
+
+.author:hover{
+    color: #ff0000;
+ }
