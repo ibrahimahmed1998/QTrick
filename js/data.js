@@ -1,13 +1,13 @@
 data = [
     {
         question: 'في كل الحسابات الدائنة بالجنيه المصري يكون الايداع النقدي حق يوم العمل التالي و لو اراد العميل ان يكون الايداع حق نفس اليوم'
-        ,answers: {
+        , answers: {
             a: "سيتم خصم عمولة 0.1% ( واحد في الالف بحد ادني 5 ج )"
-            ,b: "سيتم خصم عمولة 30 ج علي كل المبلغ"
-            ,c: 'سيتم خصم عمولة 30 ج علي كل الف'
-            ,d: 'لا شئ مما سبق'
-        },correctAnswer: 'a'
-        ,author: 'System'
+            , b: "سيتم خصم عمولة 30 ج علي كل المبلغ"
+            , c: 'سيتم خصم عمولة 30 ج علي كل الف'
+            , d: 'لا شئ مما سبق'
+        }, correctAnswer: 'a'
+        , author: 'System'
     },
     {
         question: 'لا يحق للعميل السحب النقدي من حساباته داخل الفرع بالرقم القومي منتهي الصلاحية',
@@ -18,7 +18,7 @@ data = [
             d: "جميع ما سبق",
 
         }, correctAnswer: 'd'
-        ,author: 'Osama.S.Farouk'
+        , author: 'Osama.S.Farouk'
     },
 
     {
@@ -30,7 +30,7 @@ data = [
             d: "جميع ما سبق صحيح",
 
         }, correctAnswer: 'd'
-        ,author: 'System'
+        , author: 'System'
     },
 
     {
@@ -42,7 +42,7 @@ data = [
             d: "العميل يقوم بإدخال الرقم السري اكثر من 4ارقام",
 
         }, correctAnswer: 'a'
-        ,author: 'M.Abdou.ELS'
+        , author: 'M.Abdou.ELS'
 
     },
 
@@ -55,7 +55,7 @@ data = [
             d: "14%",
 
         }, correctAnswer: 'b'
-        ,author: 'M.Abdou.ELS'
+        , author: 'M.Abdou.ELS'
 
     },
 
@@ -68,7 +68,7 @@ data = [
             d: "100 k",
 
         }, correctAnswer: 'a'
-        ,author: 'M.Abdou.ELS'
+        , author: 'M.Abdou.ELS'
     },
 
     {
@@ -80,10 +80,34 @@ data = [
             d: "ثلاثة اشهر",
 
         }, correctAnswer: 'd'
-        ,author: 'Fathi Matter'
+        , author: 'Fathi Matter'
 
     },
 
+    {
+        question: 'قام عميل بتحويل مبلغ من البطاقة الائتمانية للمحفظة و تم اعتبارها سحب نقدي سيتم',
+        answers: {
+            a: "احتساب فائدة مدينة فقط حسب نوع البطاقة",
+            b: "سيتم احتساب عمولة سحب نقدي فقط",
+            c: "لا شئ مما سبق",
+            d: "سيتم احتساب عمولة سحب نقدي بالاضافة الي الفائدة المدينة",
+
+        }, correctAnswer: 'd'
+        , author: 'Fathi Matter'
+    },
+    {
+        question: ' في حالة وجود عطل بالانترنت البنكي يستدعي لتسجيل شكوي يجب ان يتم',
+        answers: {
+            a: "عمل شكوي للعميل و اعطاءه رقم الشكوي و المدة",
+            b: "ارسال اشعار ل RayaTeams رغم عدم وجود عطل حقيقي يستدعي الارسال لل ",
+            c: "توجيه العميل لارسال كل تفاصيل العطل لـ BM19888@banquemisr.com",
+            d: "لا شئ مما سبق",
+
+        }, correctAnswer: 'c'
+        , author: 'System'
+
+    },
+    /*
     {
         question: '',
         answers: {
@@ -92,7 +116,170 @@ data = [
             c: " ",
             d: " ",
 
-        }, correctAnswer: 'd'
-    },
+        }, correctAnswer: ''
+        , author: 'System'
 
+    },
+     question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    }, question: '',
+        answers: {
+            a: " ",
+            b: " ",
+            c: " ",
+            d: " ",
+
+        }, correctAnswer: ''
+        , author: 'System'
+
+    },
+*/
 ]
