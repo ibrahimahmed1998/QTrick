@@ -42,10 +42,13 @@ const start = () => {
         const div4 = new_ele(div3, 'div', null, 'card-body', null);
         new_ele(div4, 'h5', data[count].answers[arr[i]], 'card-title', {name:'id', val:'ans'});
     }
-
+    /*########################### author part ###########################*/
     author = data[count].author;
     new_ele(container, 'h5', author, 'author', null);
     console.log("author : "+author);
+    /*########################### Correct Ans part ###########################*/
+    correct_ans = data[count].correctAnswer;
+    console.log("correct_ans : "+correct_ans);
     
  }
 

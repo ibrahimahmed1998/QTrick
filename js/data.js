@@ -34,47 +34,54 @@ data = [
     },
 
     {
-        question: '',
+        question: 'كود 55 خاص ببطاقات الخصم الفوري +المرتبات',
         answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
+            a: "تم إدخال الرقم السري خطأ",
+            b: "عدم كفايه رصيد الحساب",
+            c: "تم استنفاذ عدد مرات السحب النقدي اليومى",
+            d: "العميل يقوم بإدخال الرقم السري اكثر من 4ارقام",
 
-        }, correctAnswer: 'd'
+        }, correctAnswer: 'a'
+        ,author: 'M.Abdou.ELS'
+
     },
 
     {
-        question: '',
+        question: 'معدل عائد المرابحة الثابت للبطاقة الائتمانية كنانه في السنه',
         answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
+            a: "34.17%",
+            b: "11.39%",
+            c: "20.5%",
+            d: "14%",
 
-        }, correctAnswer: 'd'
+        }, correctAnswer: 'b'
+        ,author: 'M.Abdou.ELS'
+
     },
 
     {
-        question: '',
+        question: 'حدود الاستخدام لعمليات السحب في اليوم من الماكينه لكارت world elite master card debit',
         answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
+            a: "20 k",
+            b: "50 k ",
+            c: "15 k",
+            d: "100 k",
 
-        }, correctAnswer: 'd'
+        }, correctAnswer: 'a'
+        ,author: 'M.Abdou.ELS'
     },
 
     {
-        question: '',
+        question: 'عند اصدار بطاقه تجديد للخصم الفورى كم المدة التى يحتفظ بيها الفرع بالكارت ثم يتم إعدامو لعدم الاستلام( - )من تاريخ الاصدار ',
         answers: {
-            a: " ",
-            b: " ",
-            c: " ",
-            d: " ",
+            a: "اسبوعين ",
+            b: "شهر ",
+            c: "شهرين ",
+            d: "ثلاثة اشهر",
 
         }, correctAnswer: 'd'
+        ,author: 'Fathi Matter'
+
     },
 
     {
