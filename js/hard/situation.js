@@ -2,32 +2,47 @@ const  container = document.querySelector('#container');
 
 address=[
     {
-        question:"ما هو أكبر سورة في القرآن الكريم؟",
+        question:"انا عايز اعرف كل حاجة عن البطاقة الائتمانية و عايز اعرف كل الفروق ما بينهم كلهم",
     },
     {
-        question:"ما هو أكبر سورة في  ",
+        question:"انا عامل اكتر من 5 تعزيزات لشكوي بقالها شهرين و مفيش رد !",
     },
     {
-        question:"ما ه ي القرآن الكريم؟",
+        question:"انا اتصلت اكتر من 5 مرات علي الانترنت البنكي و مش هقفل غير لما يشتغل معايا",
     },
     {
-        question:"ما هو أكبر سورة في ال كريم؟",
+        question:"انا مش هقفل معاك غير لما تديني مسئول",
     },
     {
-        question:"ما هو  لقرآن الكريم؟",
+        question:"اقتراحات",
+    },
+    {
+        question:"اقتراحات",
+    },
+    {
+        question:"اقتراحات",
+    },
+    {
+        question:"اقتراحات",
+    },
+    {
+        question:"اقتراحات",
+    },
+    {
+        question:"اقتراحات",
     },
 
 ]
 
 
+// console.log(address);
 
-
-console.log(address);
-
+ 
 address.forEach( element  => {
 
-      new_ele( container, 'div', element.question , 'alert alert-danger col col-lg-5', null );
- 
+    const div= new_ele( container, 'div', null , 'alert alert-danger col col-lg-5', null  );
+    new_ele( div, 'a', element.question , null, {name:"href",val:"test"} );
+
 });
 
 
