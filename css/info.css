@@ -21,3 +21,10 @@ body{
     
 }
   
+.card.mb-3.question{
+   color: black;
+}
+
+.card.mb-3.ans{
+    color:  rgba(0, 0, 0, 0.76)
+ }

@@ -14,10 +14,12 @@ const start = () => {
     if(data[count].question <=0){ data[count].question ="الإنتهاء من الاختبار"; }
 
     /*########################### Question part ###########################*/
-    const anc = new_ele(container, 'a', null,null, { name: 'href', val: '#' })
-    const div = new_ele(anc, 'div', null, 'card mb-3', null);
-    const div2 = new_ele(div, 'div', null, 'card-body', null);
-    new_ele(div2, 'h5', data[count].question, 'card-title', null);
+    const anc =new_ele(container, 'a', null,null, { name: 'href', val: '#' })
+    const div =new_ele(anc,'div',null,'card mb-3 question',null);
+    const div2=new_ele(div,'div',null,'card-body',null);
+    var qs = (count+1)+" . "+data[count].question;
+
+    new_ele(div2,'h5',qs,'card-title',{name:"style",val:"direction:rtl;"});
     /*########################### Answer part ###########################*/
     arr = Object.keys(data[count].answers);
 
