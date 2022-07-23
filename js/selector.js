@@ -41,14 +41,19 @@ const start = () => {
     new_ele(container, 'h5', author, 'author', null);
     /*########################### Correct Ans part ###########################*/
     correct_ans = data[count].correctAnswer;    
-    console.log("correct_ans : "+correct_ans);
- }
+  }
 
- const display_result = (res) => {
+ const display_result = (res,arr) => {
     const btn = document.querySelector('#btn');
     btn.addEventListener('click', () => {
              
              btn.innerHTML = res;
+
+              btn.addEventListener('click', () => {
+
+                btn.innerHTML =arr;
+
+             });   
  })}
            
 const clearall = () => { container.innerHTML = ''; }
